@@ -1,6 +1,6 @@
 {
 	"version": "2.4.0",
-	"mailpoet_api_key": "your_mailpoet_api_key",
+	"mailpoet_api_key": "aecfb2660c6036328b6e204328f4b99d",
 	"mailpoet_list_id": "3",
 	"subcription_widget": {
 		"enable": true,
@@ -186,85 +186,85 @@
 		}
 	},
 	"signUp_page": {
-		"title": "Create an account",
-		"sub_title": "Enter your email below to create your account.",
+		"title": "Hesap Oluştur",
+		"sub_title": "Hesabınızı oluşturmak için aşağıya e-postanızı girin.",
 		"blockquote": {
-			"text": "This theme has saved me countless hours of work and helped me deliver stunning designs to my clients faster than ever before.",
-			"author": "Chis agency"
+			"text": "",
+			"author": "Serkan EKEN"
 		}
 	},
 	"signIn_page": {
-		"title": "Sign in to your account",
-		"sub_title": "Enter your email below to sign in to your account.",
+		"title": "Hesabınızda oturum açın",
+		"sub_title": "Hesabınızda oturum açmak için aşağıya e-postanızı girin.",
 		"blockquote": {
-			"text": "This theme has saved me countless hours of work and helped me deliver stunning designs to my clients faster than ever before.",
-			"author": "Chis agency"
+			"text": "",
+			"author": "Serkan EKEN"
 		},
 		"lost_password": {
 			"is_use_lostpassword_default_of_wp": false,
-			"message": "Lost password not implemented yet! Please contact admmin for support.",
-			"url_lostpassword_default_of_wp": "https://yourwebsite.com/wp-login.php?action=lostpassword"
+			"message": "Kayıp şifre henüz uygulanmadı! Destek için lütfen benimle iletişime geçin.",
+			"url_lostpassword_default_of_wp": "https://www.serkaneken.com/wp-login.php?action=lostpassword"
 		}
 	},
 	"mobile_nav_sidebar": {
-		"description": "Discover the most outstanding articles on all topics of life. Write your stories and share them with the community. "
+		"description": "Hayata dair her konuda en seçkin makaleleri keşfedin. Hikayelerinizi yazın ve toplulukla paylaşın. "
 	},
 	"help_page": {
 		"uri": "/helps",
 		"title": "Helps",
-		"sub_title": "Read and share new perspectives on just about any topic. Everyone’s welcome."
+		"sub_title": "Hemen her konuda yeni bakış açıları okuyun ve paylaşın. Herkese kapım açık."
 	},
 	"contact_page": {
 		"enable": true,
-		"title": "Get in touch",
-		"sub_title": "We’d love to hear from you. Fill out the form below to get in touch with us.",
+		"title": "Bana Ulaşın",
+		"sub_title": "Sizden haber almak isterim. Bezimle iletişime geçmek için aşağıdaki formu doldurun.",
 		"form": {
-			"success_message": "🎉 Thank you for your message. We will get back to you soon.",
-			"error_message": "Something went wrong. Please try again. If the problem persists, you can contact me."
+			"success_message": "🎉 Mesajınız için teşekkür ederim. Kısa sürede geri dönüş yapacağım.",
+			"error_message": "Bir şeyler yanlış gitti. Lütfen tekrar deneyin. Sorun devam ederse, benimle diğer kanallar üzerinden iletişime geçebilirsiniz."
 		},
 		"my_contact_info": [
 			{
 				"name": "address",
-				"title": "🚀 ADDRESS",
-				"desc": "123 Main Street, New York, NY 10001"
+				"title": "🚀 ADRES",
+				"desc": "Hükümet Caddesi No: 10 TEKİRDAĞ"
 			},
 			{
 				"name": "email",
-				"title": "💌 EMAIL",
-				"desc": "example@example.com"
+				"title": "💌 E-POSTA",
+				"desc": "ornek@ornek.com"
 			},
 			{
 				"name": "phone",
-				"title": "☎️ PHONE",
-				"desc": "+88 123 456 789"
+				"title": "☎️ TELEFON",
+				"desc": "+90 123 456 7890"
 			},
 			{
 				"name": "working_hours",
-				"title": "🕒 WORKING HOURS",
+				"title": "🕒 ÇALIŞMA SAATLERİ",
 				"desc": "Mon - Fri: 9:00 - 19:00"
 			},
 			{
 				"name": "socials",
-				"title": "👋 SOCIALS"
+				"title": "👋 SOSYAL MEDYA"
 			}
 		]
 	},
 	"document_page": {
 		"enable": true,
 		"uri": "/documents",
-		"title": "Documents",
-		"sub_title": "Read and share new perspectives on just about any topic. Everyone’s welcome."
+		"title": "Dökümanlar",
+		"sub_title": "Hemen her konuda yeni bakış açıları okuyun ve paylaşın. Herkese kapım açık."
 	},
 	"cookies_policy_page": {
 		"uri": "#"
 	},
 	"privacy_policy_page": {
 		"uri": "/privacy-policy",
-		"title": "Privacy Policy"
+		"title": "Gizlilik Sözleşmesi"
 	},
 
 	"empty_state": {
-		"title": "No results found.",
-		"description": "We couldn’t find any results. Try for something else."
+		"title": "Sonuç Bulunamadı.",
+		"description": "Herhangi bir sonuç bulamadık. Başka bir şey deneyin."
 	}
 }
