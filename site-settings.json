@@ -4,21 +4,21 @@
 	"mailpoet_list_id": "3",
 	"subcription_widget": {
 		"enable": true,
-		"title": "Stay up to date",
-		"description": "Get notified when I publish something new, and unsubscribe at any time.",
-		"placeholder": "Enter your email address",
-		"success_message": "Thank you for subscribing. You're in!",
-		"error_message": "Something went wrong. Please try again. If the problem persists, you can contact me."
+		"title": "Haberdar Olun",
+		"description": "Yeni bir şey yayınladığımda haberdar olun ve istediğiniz zaman aboneliğinizi iptal edin.",
+		"placeholder": "E-Posta Adresiniz",
+		"success_message": "Abone olduğunuz için teşekkür ederim. Artık Her Paylaşımda sanada bilgi vereceğim!",
+		"error_message": "Bir şeyler yanlış gitti. Lütfen tekrar deneyin. Sorun devam ederse, benimle iletişime geçmekten çekinmeyin."
 	},
 	"newsletter_section": {
 		"enable": true,
-		"title": "Join our newsletter 🎉",
-		"description": "Read and share new perspectives on just about any topic. Everyone’s welcome.",
+		"title": "Haber bültenime sende katıl 🎉",
+		"description": "Hemen her konuda yeni bakış açıları okuyun ve paylaşın. Herkese kapımız açık.",
 		"right_image": "/images/SVG-subcribe2.png",
-		"features_list": ["Create a free account.", "Write your stories."]
+		"features_list": ["Ücretsiz hesap oluşturun.", "Bilgilerinizi Paylaşın."]
 	},
 	"top_banner": {
-		"enable": true,
+		"enable": false,
 		"description": "-50% Intro price for the next 72 hours only!.",
 		"end_link": {
 			"url": "https://themeforest.net/item/ncmaz-nextjs-headless-wordpress-blog-magazine/47815656",
@@ -28,22 +28,22 @@
 	},
 	"top_category_section": {
 		"enable": true,
-		"title": "Discover top 10 categories",
-		"sub_title": "Let's explore the most popular categories"
+		"title": "En iyi kategorileri keşfedin",
+		"sub_title": "En popüler kategorileri inceleyelim"
 	},
 	"site_info": {
-		"site_title": "Ncmaz Nextjs Blog",
-		"site_description": "Ncmaz Nextjs Blog headless WordPress",
-		"site_keywords": "Ncmaz Nextjs Blog",
-		"site_author": "ChisNghiax",
-		"site_email": "Your Email",
-		"site_phone": "Your Phone",
-		"site_address": "Your Address",
-		"site_city": "Your City",
-		"site_state": "Your State",
-		"site_zip": "Your Zip",
-		"site_country": "Your Country",
-		"site_url": "https://www.yoursite.com",
+		"site_title": "Serkan EKEN",
+		"site_description": "Serkan EKEN Kişisel Blog.",
+		"site_keywords": "Serkan EKEN Serkaneken teknoloji",
+		"site_author": "Serkan",
+		"site_email": "serkan@serkaneken.com",
+		"site_phone": "+905442530759",
+		"site_address": "Karadeniz Mahallesi Gönül Yazar Sokak No:42/5",
+		"site_city": "Tekirdağ",
+		"site_state": "Süleymanpaşa",
+		"site_zip": "59100",
+		"site_country": "Türkiye",
+		"site_url": "https://www.serkaneken.com",
 		"site_logo": "/logo.png",
 		"site_logo_light": "/logo-light.png",
 		"site_favicon": "/favicon.png"
@@ -51,22 +51,22 @@
 	"site_socials": [
 		{
 			"name": "facebook",
-			"url": "https://www.facebook.com/yourfacebookpage",
+			"url": "https://www.facebook.com/serkanekenn",
 			"icon": "/images/socials/facebook.svg",
-			"description": "Follow us on Facebook"
+			"description": "Facebook ta Takip Edin"
 		},
 		{
 			"name": "twitter",
-			"url": "https://twitter.com/yourtwitterpage",
+			"url": "https://x.com/seken59",
 			"icon": "/images/socials/x-twitter.svg",
-			"description": "Follow us on Twitter"
+			"description": "X te Takip Edin"
 		},
 
 		{
 			"name": "github",
-			"url": "https://www.github.com/yourmediumpage",
+			"url": "https://www.github.com/seken59",
 			"icon": "/images/socials/github.svg",
-			"description": "Follow us on Github"
+			"description": "Github ta Takip Edin"
 		},
 		{
 			"name": "tiktok",
@@ -81,7 +81,7 @@
 		}
 	},
 	"site_footer": {
-		"all_rights_reserved_text": "© 2023 ChisNghiax Company, Inc. All rights reserved."
+		"all_rights_reserved_text": "© 2014 Serkan EKEN. Site içeriğinde bulunan materyallerin tüm hakları saklıdır."
 	},
 	"single_page": {
 		"show_view_cout": true,
@@ -90,7 +90,7 @@
 	"search_page": {
 		"recommended_searches": {
 			"enable": true,
-			"title": "Recommended searches",
+			"title": "Önerilen Aramalar",
 			"items": [
 				{
 					"title": "Programming",
