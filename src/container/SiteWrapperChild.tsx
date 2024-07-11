@@ -6,7 +6,6 @@ import {
 	updateAuthorizedUser,
 } from '@/stores/viewer/viewerSlice'
 import { updateGeneralSettings } from '@/stores/general-settings/generalSettingsSlice'
-import ControlSettingsDemo from './ControlSettingsDemo'
 import CookiestBoxPopover from '@/components/CookiestBoxPopover'
 import MusicPlayer from '@/components/MusicPlayer/MusicPlayer'
 import { initLocalPostsSavedListFromLocalstored } from '@/stores/localPostSavedList/localPostsSavedListSlice'
@@ -104,7 +103,6 @@ export function SiteWrapperChild({
 	return (
 		<div>
 			<CookiestBoxPopover />
-			<ControlSettingsDemo />
 			<MusicPlayer />
 		</div>
 	)
