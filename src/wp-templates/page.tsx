@@ -12,7 +12,7 @@ import MyWordPressBlockViewer from "@/components/MyWordPressBlockViewer";
 const Page: FaustTemplate<GetPageQuery> = (props) => {
   // LOADING ----------
   if (props.loading) {
-    return <>Loading...</>;
+    return <>Yükleniyor...</>;
   }
 
   // for this page
