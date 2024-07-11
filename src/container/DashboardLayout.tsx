@@ -257,7 +257,7 @@ export default function DashboardLayout({ children }: Props) {
 				}}
 			>
 				<label htmlFor="search-field" className="sr-only">
-					Search
+					Arama
 				</label>
 				<MagnifyingGlassIcon
 					className="pointer-events-none absolute inset-y-0 start-0 h-full w-5 text-neutral-400"
@@ -266,7 +266,7 @@ export default function DashboardLayout({ children }: Props) {
 				<input
 					id="search-field"
 					className="block h-full w-full border-0 bg-transparent py-0 pe-0 ps-8 text-neutral-900 placeholder:text-neutral-400 focus:ring-0 sm:text-sm dark:text-white"
-					placeholder="Search..."
+					placeholder="Arama..."
 					type="search"
 					name="search"
 				/>
@@ -321,7 +321,7 @@ export default function DashboardLayout({ children }: Props) {
 												className="-m-2.5 p-2.5"
 												onClick={() => setSidebarOpen(false)}
 											>
-												<span className="sr-only">Close sidebar</span>
+												<span className="sr-only">Yan Paneli Kapat</span>
 												<XMarkIcon
 													className="h-6 w-6 text-white"
 													aria-hidden="true"
@@ -352,7 +352,7 @@ export default function DashboardLayout({ children }: Props) {
 								className="-m-2.5 p-2.5 text-neutral-700 lg:hidden dark:text-neutral-300"
 								onClick={() => setSidebarOpen(true)}
 							>
-								<span className="sr-only">Open sidebar</span>
+								<span className="sr-only">Yan Paneli Aç</span>
 								<Bars3Icon
 									className="h-[1.65rem] w-[1.65rem]"
 									aria-hidden="true"
