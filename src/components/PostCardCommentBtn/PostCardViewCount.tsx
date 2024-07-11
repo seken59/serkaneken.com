@@ -32,7 +32,7 @@ const PostCardViewCount: FC<PostCardViewCountProps> = ({
 	const classess = `nc-PostCardViewCount group/PostCardViewCount relative flex items-center text-neutral-600 transition-colors dark:text-neutral-200 hover:text-indigo-600 dark:hover:text-indigo-500 ${className} text-xs`
 
 	return (
-		<div className={classess} title="Views">
+		<div className={classess} title="Görüntüleme">
 			{renderContent()}
 		</div>
 	)
