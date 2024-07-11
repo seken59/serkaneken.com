@@ -30,8 +30,8 @@ export default function Login() {
     <LoginLayout
       isLoginPage
       rightBtn={{
-        text: T["Sign up"],
-        href: "/sign-up",
+        text: T["Kayıt Ol"],
+        href: "/kayit",
       }}
     >
       <>
@@ -44,7 +44,7 @@ export default function Login() {
                 !e.currentTarget.username?.value ||
                 !e.currentTarget.password?.value
               ) {
-                toast.error(T["Username and password are required!"], {
+                toast.error(T["Kullanıcı ve Şifre Zorunludur!"], {
                   position: "bottom-center",
                 });
                 return;
@@ -101,7 +101,7 @@ export default function Login() {
           </Link>
           <span className="mx-1">|</span>
           <Link
-            href="/reset-password"
+            href="/sifremi-unuttum"
             className="text-primary-600 hover:text-primary-500 dark:text-primary-400 hover:underline underline-offset-2"
           >
             {T["Lost your password?"]}
