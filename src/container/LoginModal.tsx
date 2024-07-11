@@ -36,7 +36,7 @@ const LoginModal: FC<LoginModalProps> = () => {
 
     if (!!data?.generateAuthorizationCode.code) {
       toast.success(
-        "Login successful, system is reloading the page for synchronization...",
+        "Giriş başarılı, sistem senkronizasyon için sayfayı yeniden yüklüyor...",
         {
           position: "bottom-center",
           duration: 5000,
@@ -98,7 +98,7 @@ const LoginModal: FC<LoginModalProps> = () => {
                   <Input
                     id="username"
                     name="username"
-                    placeholder="Email or username"
+                    placeholder="E-Posta veya Kullanıcı Adı"
                     autoCapitalize="none"
                     autoComplete="username"
                     autoCorrect="off"
@@ -129,7 +129,7 @@ const LoginModal: FC<LoginModalProps> = () => {
           <p className="mt-5 sm:mt-10 text-center text-sm leading-6 text-neutral-500 dark:text-neutral-400">
             {T["Not a member?"]}?{" "}
             <Link
-              href="/sign-up"
+              href="/kayit"
               className="font-medium text-primary-600 hover:text-primary-500 dark:text-primary-400 hover:underline underline-offset-2"
               onClick={closeModal}
             >
@@ -137,7 +137,7 @@ const LoginModal: FC<LoginModalProps> = () => {
             </Link>
             <span className="mx-1">|</span>
             <Link
-              href="/reset-password"
+              href="/sifremi-unuttum"
               className="font-medium text-primary-600 hover:text-primary-500 dark:text-primary-400 hover:underline underline-offset-2"
               onClick={closeModal}
             >
