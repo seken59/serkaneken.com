@@ -27,7 +27,7 @@ export default function ResetPassWord() {
       {
         onCompleted: (data) => {
           if (data?.sendPasswordResetEmail?.success) {
-            toast.success("A password reset link has been sent to your email!");
+            toast.success("E-postanıza bir şifre sıfırlama bağlantısı gönderildi!");
           }
         },
         onError: (error) => {
@@ -41,7 +41,7 @@ export default function ResetPassWord() {
   const handleRegister = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!username) {
-      toast.error(T["Email or username are required!"], {
+      toast.error(T["E-posta veya Kullanıcı adı girmek zorundasınız!"], {
         position: "bottom-center",
       });
       return;
@@ -57,8 +57,8 @@ export default function ResetPassWord() {
     <LoginLayout
       isResetPasswordPage
       rightBtn={{
-        text: T["Sign in"],
-        href: "/login",
+        text: T["Giriş Yap"],
+        href: "/giris",
       }}
     >
       <>
@@ -66,10 +66,10 @@ export default function ResetPassWord() {
           <form onSubmit={handleRegister}>
             <div className="grid gap-4">
               <div className="grid gap-1.5">
-                <Label htmlFor="username">{T["Email or username"]}</Label>
+                <Label htmlFor="username">{T["E-Posta veya Kullanıcı Adı"]}</Label>
                 <Input
                   id="username"
-                  placeholder={T["Email or username"]}
+                  placeholder={T["E-Posta veya Kullanıcı Adı"]}
                   autoCapitalize="none"
                   autoCorrect="off"
                   type="text"
@@ -80,7 +80,7 @@ export default function ResetPassWord() {
 
               <div className="grid">
                 <ButtonPrimary loading={loading}>
-                  {T["Reset password"]}
+                  {T["Şifreyi Sıfırla"]}
                 </ButtonPrimary>
 
                 {!!error?.message && (
@@ -92,19 +92,19 @@ export default function ResetPassWord() {
         </div>
 
         <p className="text-center text-sm leading-6 text-neutral-500 dark:text-neutral-400">
-          {T["Not a member?"]}{" "}
+          {T["Üye Değilmisin ?"]}{" "}
           <Link
-            href="/sign-up"
+            href="/kayit"
             className="text-primary-600 hover:text-primary-500 dark:text-primary-400 hover:underline underline-offset-2"
           >
-            {T["Sign up"]}
+            {T["Kayıt Ol"]}
           </Link>
           <span className="mx-1">|</span>
           <Link
-            href="/login"
+            href="/giris"
             className="text-primary-600 hover:text-primary-500 dark:text-primary-400 hover:underline underline-offset-2"
           >
-            {T["Login"]}
+            {T["Giriş"]}
           </Link>
         </p>
       </>
