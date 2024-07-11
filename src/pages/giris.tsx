@@ -30,7 +30,7 @@ export default function Login() {
     <LoginLayout
       isLoginPage
       rightBtn={{
-        text: T["Kayıt Ol"],
+        text: T["Sign up"],
         href: "/kayit",
       }}
     >
