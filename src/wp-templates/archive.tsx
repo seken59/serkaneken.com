@@ -18,7 +18,7 @@ import { FireIcon } from "@heroicons/react/24/outline";
 const Archive: FaustTemplate<PageArchiveGetArchiveQuery> = (props) => {
   // LOADING ----------
   if (props.loading) {
-    return <>Loading...</>;
+    return <>Yükleniyor...</>;
   }
 
   if (!props?.data || !props.data.nodeByUri) {
@@ -40,9 +40,9 @@ const Archive: FaustTemplate<PageArchiveGetArchiveQuery> = (props) => {
       >
         <div className="container py-10">
           <Alert type="error">
-            This page is not a PostFormat, please check your page uri again! 🤔
+            Bu sayfa bir PostFormat değil, lütfen sayfa uri'nizi tekrar kontrol edin! 🤔
             <br />
-            Or please contact the administrator for more details. 🤗
+            Veya daha fazla bilgi için lütfen yöneticiyle iletişime geçin. 🤗
             <br />
             {JSON.stringify(props.data.nodeByUri)}
           </Alert>
@@ -98,7 +98,7 @@ const Archive: FaustTemplate<PageArchiveGetArchiveQuery> = (props) => {
                   <div className="flex items-center text-sm font-medium space-x-2 rtl:space-x-reverse cursor-pointer text-neutral-500 dark:text-neutral-400 ">
                     <FireIcon className="w-5 h-5" />
                     <span className="text-neutral-700 dark:text-neutral-300">
-                      {count || 0} Articles
+                      {count || 0} Konu
                     </span>
                   </div>
                   <span className="block text-sm sm:text-base text-neutral-500 dark:text-neutral-400">
