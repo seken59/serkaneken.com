@@ -155,7 +155,7 @@ const Page: FaustPage<{}> = () => {
 
   useEffect(() => {
     if (isReady && isAuthenticated === false) {
-      router.push("/login");
+      router.push("/giris");
       return;
     }
     if (isAuthenticated) {
@@ -166,19 +166,19 @@ const Page: FaustPage<{}> = () => {
   //
   const handleSubmitForm = () => {
     if (!isAuthenticated) {
-      toast.error("You must login to update profile!");
+      toast.error("Profili güncellemek için giriş yapmalısınız!");
       return;
     }
     if (currentTab === "password") {
       if (passwordRef.current?.value !== confirmPasswordRef.current?.value) {
-        toast.error("Password and confirm password do not match!");
+        toast.error("Parola ve parola onayı eşleşmiyor!");
         return;
       }
     }
 
     //  for demo site only, please remove this code on your site
     if (IS_CHISNGHIAX_DEMO_SITE) {
-      toast.error("Sorry, profile update is disabled on the demo site!");
+      toast.error("Üzgünüm, demo sitesinde profil güncellemesi devre dışı bırakıldı!");
       return;
     }
 
@@ -224,10 +224,10 @@ const Page: FaustPage<{}> = () => {
         <div className="NcmazAccountPage-GeneralForm space-y-5 sm:space-y-6 md:sm:space-y-7">
           <div>
             <h2 className="text-xl font-semibold capitalize">
-              Profile settings
+              Profil Ayarları
             </h2>
             <span className="block mt-2.5 text-sm text-neutral-500 dark:text-neutral-400">
-              Update your username and manage your account.
+              Kullanıcı adınızı güncelleyin ve hesabınızı yönetin.
             </span>
           </div>
           <div className="w-24 border-b border-neutral-200 dark:border-neutral-700"></div>
@@ -235,7 +235,7 @@ const Page: FaustPage<{}> = () => {
 
           {/* ---- */}
           <div className="EditProfileForm__Profile-picture ">
-            <Label>Profile picture</Label>
+            <Label>Profil Resmi</Label>
             <ButtonInsertImage
               defaultImage={avatarImage}
               className="mt-1.5 max-w-40"
@@ -246,7 +246,7 @@ const Page: FaustPage<{}> = () => {
 
           {/* ---- */}
           <div className="EditProfileForm__Cover-picture">
-            <Label>Cover photo</Label>
+            <Label>Kapak fotoğrafı</Label>
             <ButtonInsertImage
               defaultImage={coverImage}
               className="mt-1.5 flex-1"
@@ -256,7 +256,7 @@ const Page: FaustPage<{}> = () => {
 
           {/* ---- */}
           <div className="EditProfileForm__firstName">
-            <Label>First Name</Label>
+            <Label>Ad</Label>
             <Input
               className="mt-1.5"
               defaultValue={
@@ -268,7 +268,7 @@ const Page: FaustPage<{}> = () => {
 
           {/* ---- */}
           <div className="EditProfileForm__lastName">
-            <Label>Last Name</Label>
+            <Label>Soyad</Label>
             <Input
               className="mt-1.5"
               defaultValue={getViewerProfileResult.data?.viewer?.lastName || ""}
@@ -278,7 +278,7 @@ const Page: FaustPage<{}> = () => {
 
           {/* ---- */}
           <div className="EditProfileForm__nickName">
-            <Label>Nickname (required)</Label>
+            <Label>Kullanıcı Adı (Gerekli)</Label>
             <Input
               className="mt-1.5"
               defaultValue={getViewerProfileResult.data?.viewer?.nickname || ""}
@@ -289,14 +289,14 @@ const Page: FaustPage<{}> = () => {
 
           {/* ---- */}
           <div className="EditProfileForm__Biographical">
-            <Label>Biographical Info</Label>
+            <Label>Biyografik Bilgi</Label>
             <span className="text-xs text-neutral-500 dark:text-neutral-400">
-              Biographical Info, this will show up in the author page.
+              Biyografik Bilgi, bu yazar sayfasında görünecektir.
             </span>
             <Textarea
               rows={5}
               className="mt-1.5"
-              placeholder={"Something about yourself in a few word."}
+              placeholder={"Birkaç kelimeyle kendiniz hakkında bir şeylerden bahsedin."}
               defaultValue={viewerProfile.description || ""}
               ref={descriptionRef}
             />
@@ -306,12 +306,12 @@ const Page: FaustPage<{}> = () => {
           <div className="EditProfileForm__shortBio">
             <Label> Short Bio</Label>
             <span className="text-xs text-neutral-500 dark:text-neutral-400">
-              A short Bio (e.g. occupation), this will show up in the author
-              cards.
+              Kısa bir Biyografi (örneğin meslek), bu yazar kartında görünecektir
+              
             </span>
             <Input
               className="mt-1.5"
-              placeholder={"UX/UI Designer"}
+              placeholder={"Webmaster"}
               defaultValue={viewerProfile.ncUserMeta?.ncBio || ""}
               ref={ncBioRef}
             />
@@ -319,14 +319,14 @@ const Page: FaustPage<{}> = () => {
 
           {/* ---- */}
           <div className="EditProfileForm__Website">
-            <Label>Website</Label>
+            <Label>Websiteniz</Label>
             <div className="mt-1.5 flex">
               <span className="inline-flex items-center px-3 rounded-s-2xl border border-e-0 border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400">
                 <GlobeAltIcon className="w-6 h-6" />
               </span>
               <Input
                 className="!rounded-s-none"
-                placeholder={"yourwebsite.com"}
+                placeholder={"sizinsiteniz.com"}
                 defaultValue={viewerProfile.ncUserMeta?.websiteUrl || ""}
                 ref={websiteUrlRef}
               />
@@ -343,17 +343,17 @@ const Page: FaustPage<{}> = () => {
         <div className="NcmazAccountPage-GeneralForm space-y-5 sm:space-y-6 md:sm:space-y-7">
           <div>
             <h2 className="text-xl font-semibold capitalize">
-              General settings
+              Genel Ayarlar
             </h2>
             <span className="block mt-2.5 text-sm text-neutral-500 dark:text-neutral-400">
-              Update your username and manage your account.
+              Kullanıcı adınızı güncelleyin ve hesabınızı yönetin.
             </span>
           </div>
           <div className="w-24 border-b border-neutral-200 dark:border-neutral-700"></div>
           {/* ---- */}
 
           <div>
-            <Label>Display Name</Label>
+            <Label>Görünen Ad</Label>
             <Input
               className="mt-1.5"
               defaultValue={viewerProfile.name || ""}
@@ -364,14 +364,14 @@ const Page: FaustPage<{}> = () => {
 
           {/* ---- */}
           <div>
-            <Label>Email</Label>
+            <Label>E-Posta</Label>
             <div className="mt-1.5 flex">
               <span className="inline-flex items-center px-2.5 rounded-s-2xl border border-e-0 border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400 text-sm">
                 <EnvelopeIcon className="w-6 h-6" />
               </span>
               <Input
                 className="!rounded-s-none"
-                placeholder="example@email.com"
+                placeholder="ornek@gmail.com"
                 defaultValue={getViewerProfileResult.data?.viewer?.email || ""}
                 required
                 ref={emailRef}
@@ -389,17 +389,17 @@ const Page: FaustPage<{}> = () => {
         <div className="NcmazAccountPage-GeneralForm space-y-5 sm:space-y-6 md:sm:space-y-7">
           <div>
             <h2 className="text-xl font-semibold capitalize">
-              Password settings
+              Şifre Ayarları
             </h2>
             <span className="block mt-2.5 text-sm text-neutral-500 dark:text-neutral-400">
-              Update your password.
+              Şifrenizi Güncelleyin.
             </span>
           </div>
           <div className="w-24 border-b border-neutral-200 dark:border-neutral-700"></div>
           {/* ---- */}
 
           <div className="ChangePasswordForm__newPass">
-            <Label>New password</Label>
+            <Label>Yeni Şifre</Label>
             <Input
               required
               type="password"
@@ -408,12 +408,12 @@ const Page: FaustPage<{}> = () => {
               ref={passwordRef}
             />
             <span className="text-xs text-neutral-500 dark:text-neutral-400">
-              Password must be at least 6 characters
+              Şifre en az 6 karakterden oluşmalıdır
             </span>
           </div>
           {/* ---- */}
           <div className="ChangePasswordForm__ConfirmPass">
-            <Label>Confirm password</Label>
+            <Label>Şifre Tekrarı</Label>
             <Input
               required
               type="password"
@@ -432,10 +432,10 @@ const Page: FaustPage<{}> = () => {
         <div className="NcmazAccountPage-GeneralForm space-y-5 sm:space-y-6 md:sm:space-y-7">
           <div>
             <h2 className="text-xl font-semibold capitalize">
-              Social settings
+              Sosyal Ayarlar
             </h2>
             <span className="block mt-2.5 text-sm text-neutral-500 dark:text-neutral-400">
-              Add elsewhere links to your profile.
+              Profilinize sosyal bağlantılar ekleyin.
             </span>
           </div>
           <div className="w-24 border-b border-neutral-200 dark:border-neutral-700"></div>
@@ -459,7 +459,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://www.youtube.com/channel/yourname"
+                  placeholder="https://www.youtube.com/channel/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.youtubeUrl || ""}
                   ref={youtubeUrlRef}
                 />
@@ -483,7 +483,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://www.facebook.com/yourname"
+                  placeholder="https://www.facebook.com/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.facebookUrl || ""}
                   ref={facebookUrlRef}
                 />
@@ -507,7 +507,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://medium.com/yourname"
+                  placeholder="https://medium.com/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.mediumUrl || ""}
                   ref={mediumUrlRef}
                 />
@@ -531,7 +531,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://github.com/yourname"
+                  placeholder="https://github.com/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.githubUrl || ""}
                   ref={githubUrlRef}
                 />
@@ -555,7 +555,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://vimeo.com/yourname"
+                  placeholder="https://vimeo.com/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.vimeoUrl || ""}
                   ref={vimeoUrlRef}
                 />
@@ -579,7 +579,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://twitter.com/yourname"
+                  placeholder="https://twitter.com/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.twitterUrl || ""}
                   ref={twitterUrlRef}
                 />
@@ -603,7 +603,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-e-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://instagram.com/yourname"
+                  placeholder="https://instagram.com/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.instagramUrl || ""}
                   ref={instagramUrlRef}
                 />
@@ -627,7 +627,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://linkedin.com/in/yourname"
+                  placeholder="https://linkedin.com/in/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.linkedinUrl || ""}
                   ref={linkedinUrlRef}
                 />
@@ -651,7 +651,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://pinterest.com/yourname"
+                  placeholder="https://pinterest.com/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.pinterestUrl || ""}
                   ref={pinterestUrlRef}
                 />
@@ -675,7 +675,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://twitch.com/yourname"
+                  placeholder="https://twitch.com/adınız"
                   defaultValue={viewerProfile.ncUserMeta?.twitchUrl || ""}
                   ref={twitchUrlRef}
                 />
@@ -698,7 +698,7 @@ const Page: FaustPage<{}> = () => {
                 <Input
                   className="!rounded-s-none"
                   sizeClass="h-11 px-4 ps-2 pe-3"
-                  placeholder="https://www.tiktok.com/@name"
+                  placeholder="https://www.tiktok.com/@adınız"
                   defaultValue={viewerProfile.ncUserMeta?.tiktokUrl || ""}
                   ref={tiktokRef}
                 />
@@ -722,14 +722,14 @@ const Page: FaustPage<{}> = () => {
                 </span>
                 <Input
                   className="!rounded-s-none"
-                  placeholder={"https://buymeacoffee.com/yourname"}
+                  placeholder={"https://buymeacoffee.com/adınız"}
                   sizeClass="h-11 px-4 ps-2 pe-3"
                   defaultValue={viewerProfile.ncUserMeta?.buymeacoffeUrl || ""}
                   ref={buymeacoffeUrlRef}
                 />
               </div>
               <span className="block mt-1 mb-2 text-xs text-neutral-500 dark:text-neutral-400">
-                You should have an account at - buymeacoffee.com/yourname
+                adresinde bir hesabınız olmalıdır - buymeacoffee.com/adınız
               </span>
             </div>
           </div>
@@ -793,7 +793,7 @@ const Page: FaustPage<{}> = () => {
                     loading={updateViewerProfileResult.loading}
                     onClick={handleSubmitForm}
                   >
-                    Update profile
+                    Profili Güncelle
                   </ButtonPrimary>
                 </div>
               </div>
