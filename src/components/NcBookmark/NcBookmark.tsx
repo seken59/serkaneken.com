@@ -120,7 +120,7 @@ const NcBookmark: FC<NcBookmarkProps> = ({
 
 	const handleClickSaveAction = () => {
 		if (!isReady) {
-			toast.error('Please wait a moment, data is being prepared.')
+			toast.error('Lütfen bir dakika bekleyin, veriler hazırlanıyor.')
 			return
 		}
 
@@ -131,7 +131,7 @@ const NcBookmark: FC<NcBookmarkProps> = ({
 		}
 
 		if (!viewer?.databaseId) {
-			toast.error('Please wait a moment, data is being prepared.')
+			toast.error('Lütfen bir dakika bekleyin, veriler hazırlanıyor.')
 			return
 		}
 
@@ -164,7 +164,7 @@ const NcBookmark: FC<NcBookmarkProps> = ({
 	return (
 		<button
 			className={`nc-NcBookmark relative flex items-center justify-center rounded-full ${containerClassName}`}
-			title={isBookmarked ? 'Remove from saved list' : 'Save to reading list'}
+			title={isBookmarked ? 'Kaldır' : 'Kaydet'}
 			onClick={handleClickSaveAction}
 		>
 			<svg
