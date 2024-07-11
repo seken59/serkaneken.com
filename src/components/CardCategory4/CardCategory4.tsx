@@ -52,7 +52,7 @@ const CardCategory4: FC<CardCategory4Props> = ({
 						<span className="line-clamp-1">{name}</span>
 					</h2>
 					<span className="block text-xs text-neutral-500 sm:text-sm dark:text-neutral-400">
-						{count} Articles
+						{count} Konu
 					</span>
 				</div>
 			</div>
