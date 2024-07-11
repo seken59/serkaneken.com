@@ -44,7 +44,7 @@ export default function Login() {
                 !e.currentTarget.username?.value ||
                 !e.currentTarget.password?.value
               ) {
-                toast.error(T["Kullanıcı ve Şifre Zorunludur!"], {
+                toast.error(T["Username and password are required!"], {
                   position: "bottom-center",
                 });
                 return;
