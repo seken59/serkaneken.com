@@ -163,7 +163,7 @@
 			{
 				"name": "Allow_Comments",
 				"label": "Allow Comments",
-				"enable": true
+				"enable": false
 			},
 			{
 				"name": "Post_Style",
@@ -173,7 +173,7 @@
 			{
 				"name": "Show_Right_Sidebar",
 				"label": "Show Right Sidebar",
-				"enable": true
+				"enable": false
 			}
 		]
 	},
