@@ -31,7 +31,7 @@ const CardCategory3: FC<CardCategory3Props> = ({ className = '', term }) => {
 				<span
 					className={`mt-1 block text-sm text-neutral-600 dark:text-neutral-400`}
 				>
-					{count} Articles
+					{count} Konu
 				</span>
 			</div>
 		</Link>
