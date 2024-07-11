@@ -17,7 +17,7 @@ import { FireIcon, HashtagIcon } from "@heroicons/react/24/outline";
 const Tag: FaustTemplate<PageTagGetTagQuery> = (props) => {
   // LOADING ----------
   if (props.loading) {
-    return <>Loading...</>;
+    return <>Yükleniyor...</>;
   }
 
   if (!props?.data || !props.data.tag) {
@@ -70,7 +70,7 @@ const Tag: FaustTemplate<PageTagGetTagQuery> = (props) => {
                   <div className="flex items-center text-sm font-medium space-x-2 rtl:space-x-reverse cursor-pointer text-neutral-500 dark:text-neutral-400 ">
                     <FireIcon className="w-5 h-5" />
                     <span className="text-neutral-700 dark:text-neutral-300">
-                      {count || 0} Articles
+                      {count || 0} Konu
                     </span>
                   </div>
                   <span className="block text-sm sm:text-base text-neutral-500 dark:text-neutral-400">
