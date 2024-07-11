@@ -34,7 +34,7 @@ const SectionMagazine11: FC<SectionMagazine11Props> = ({
 						href={category?.uri || ''}
 						className="flex items-center text-xs text-neutral-500"
 					>
-						<span>More Articles</span>
+						<span>Daha Fazla</span>
 						<ArrowRightIcon className="ms-1.5 h-3 w-3" />
 					</Link>
 				</div>
