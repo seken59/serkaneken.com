@@ -91,15 +91,15 @@ const SingleContent: FC<SingleContentProps> = ({ post }) => {
 		if (status === 'future') {
 			return (
 				<Alert type="warning">
-					This post is scheduled. It will be published on {date}.
+					Bu gönderi planlanmıştır. Şu tarihte yayınlanacaktır. {date}.
 				</Alert>
 			)
 		}
 		return (
 			<>
 				<Alert type="warning">
-					This post is {status}. It will not be visible on the website until it
-					is published.
+					Bu gönderi {status} aşamasındadır. Yayınlanana kadar web sitesinde görünmeyecektir.
+					yayınlandı.
 				</Alert>
 			</>
 		)
@@ -230,7 +230,7 @@ const MyInput = forwardRef(function StickyAction(
 							onClick={() => {
 								window.scrollTo({ top: 0, behavior: 'smooth' })
 							}}
-							title="Go to top"
+							title="Yukarı Çık"
 						>
 							<ArrowUpIcon className="h-4 w-4" />
 						</button>
@@ -240,7 +240,7 @@ const MyInput = forwardRef(function StickyAction(
 							className={`h-9 w-9 items-center justify-center ${
 								isShowScrollToTop ? 'hidden' : 'flex'
 							}`}
-							title="Go to top"
+							title="Yukarı Çık"
 							onClick={() => {
 								window.scrollTo({ top: 0, behavior: 'smooth' })
 							}}
