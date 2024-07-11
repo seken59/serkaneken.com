@@ -304,7 +304,7 @@ const Page: FaustPage<{}> = () => {
 
           {/* ---- */}
           <div className="EditProfileForm__shortBio">
-            <Label> Short Bio</Label>
+            <Label> Kısa Biyografi</Label>
             <span className="text-xs text-neutral-500 dark:text-neutral-400">
               Kısa bir Biyografi (örneğin meslek), bu yazar kartında görünecektir
               
