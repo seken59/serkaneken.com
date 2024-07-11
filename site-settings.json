@@ -118,7 +118,7 @@
 		"show_top_categories": true
 	},
 	"post_card": {
-		"show_view_cout": false,
+		"show_view_cout": true,
 		"show_comment_count": true
 	},
 	"submissions-settings": {
