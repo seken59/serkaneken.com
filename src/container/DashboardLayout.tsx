@@ -63,27 +63,27 @@ const navigation: NavigationItem[] = [
 		children: [
 			{
 				name: 'published',
-				title: T['Published'],
+				title: 'Konular',
 				href: '/dashboard/posts/published',
 			},
 			{
 				name: 'pending',
-				title: T['Pending'],
+				title: 'Bekleyen',
 				href: '/dashboard/posts/pending',
 			},
 			{
 				name: 'schedule',
-				title: T['Scheduled'],
+				title: 'Zamanlanan',
 				href: '/dashboard/posts/schedule',
 			},
 			{
 				name: 'draft',
-				title: T['Draft'],
+				title: 'Taslak',
 				href: '/dashboard/posts/draft',
 			},
 			{
 				name: 'trash',
-				title: T['Trash'],
+				title: 'Çöp',
 				href: '/dashboard/posts/trash',
 			},
 		],
@@ -97,22 +97,22 @@ const navigation: NavigationItem[] = [
 		children: [
 			{
 				name: 'general',
-				title: T['General'],
+				title: 'Genel Ayarlar,
 				href: '/dashboard/edit-profile/general',
 			},
 			{
 				name: 'profile',
-				title: T['Profile'],
+				title: 'Profil',
 				href: '/dashboard/edit-profile/profile',
 			},
 			{
 				name: 'password',
-				title: T['Password'],
+				title: 'Şifre',
 				href: '/dashboard/edit-profile/password',
 			},
 			{
 				name: 'socials',
-				title: T['Socials'],
+				title: 'Sosyal',
 				href: '/dashboard/edit-profile/socials',
 			},
 		],
