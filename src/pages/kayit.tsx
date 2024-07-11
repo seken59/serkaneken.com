@@ -62,7 +62,7 @@ export default function SignUp() {
   const handleRegister = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!email || !password) {
-      toast.error(T["E-posta ve Şifre Zorunludur!"], {
+      toast.error(T["Username and password are required!"], {
         position: "bottom-center",
       });
       return;
