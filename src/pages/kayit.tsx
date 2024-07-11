@@ -147,7 +147,7 @@ export default function SignUp() {
               href="/giris"
               className="text-primary-600 hover:text-primary-500 dark:text-primary-500 hover:underline underline-offset-2"
             >
-              {T["Giriş Yap"]}!
+              {T["Sign in"]}!
             </Link>
           </p>
         </div>
