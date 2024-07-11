@@ -80,7 +80,7 @@ export default function SignUp() {
     <LoginLayout
       isSignUpPage
       rightBtn={{
-        text: T["Giriş Yap"],
+        text: T["Sign in"],
         href: "/giris",
       }}
     >
@@ -92,7 +92,7 @@ export default function SignUp() {
                 <Label htmlFor="email">{T.Email}</Label>
                 <Input
                   id="email"
-                  placeholder={T["E-Posta Adresiniz"]}
+                  placeholder={T["Enter your email"]}
                   autoCapitalize="none"
                   autoComplete="email"
                   autoCorrect="off"
@@ -128,21 +128,21 @@ export default function SignUp() {
         <div>
           {NC_SITE_SETTINGS.privacy_policy_page ? (
             <p className="mb-3 text-xs text-center text-neutral-500">
-              {T["Bir hesap oluşturarak aşağıdakileri kabul etmiş olursunuz"]}{" "}
+              {T["By creating an account you agree with our"]}{" "}
               <a
                 className="underline"
                 href={NC_SITE_SETTINGS.privacy_policy_page?.uri}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {T["Gizlilik Sözleşmesi"]}!
+                {T["Privacy Policy"]}!
               </a>
               .
             </p>
           ) : null}
 
           <p className="text-center text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-            {T["Zaten bir hesabınız varmı ?"]}{" "}
+            {T["Already have an account?"]}{" "}
             <Link
               href="/giris"
               className="text-primary-600 hover:text-primary-500 dark:text-primary-500 hover:underline underline-offset-2"
