@@ -27,7 +27,7 @@ export async function myGetPaths() {
   }
 
   posts = [
-    ...categories.map((category) => ({ slug: "category/" + category.slug })),
+    ...categories.map((category) => ({ slug: category.slug })),
     ...posts,
     { slug: "home-2" },
     { slug: "home-3-podcast" },
