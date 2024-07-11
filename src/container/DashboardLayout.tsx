@@ -97,7 +97,7 @@ const navigation: NavigationItem[] = [
 		children: [
 			{
 				name: 'general',
-				title: 'Genel Ayarlar,
+				title: 'Genel Ayarlar',
 				href: '/dashboard/edit-profile/general',
 			},
 			{
