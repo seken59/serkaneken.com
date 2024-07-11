@@ -43,7 +43,7 @@ const PageContact = () => {
 	if (data && called && data?.ncmazFaustAddSentMessContactForm?.success) {
 		// thank you message after success subscribe
 		THANKS =
-			NC_SITE_SETTINGS.contact_page?.form?.success_message || 'Thank you!'
+			NC_SITE_SETTINGS.contact_page?.form?.success_message || 'Teşekkürler!'
 	}
 
 	if (data && called && !data?.ncmazFaustAddSentMessContactForm?.success) {
