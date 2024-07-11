@@ -178,6 +178,19 @@ export default {
 		'Post will be changed to draft. You can publish it later.':
 			'Gönderi taslağa dönüştürülecek. Daha sonra yayınlayabilirsiniz.',
 	},
+	TDashBoardPostTab: {
+		'Published': 'Yayınlanan',
+		'Pending': 'Bekleyen',
+		'Scheduled': 'Zamanlanan',
+		'Draft': 'Taslak',
+		'Trash': 'Çöp',
+	},
+	TDashBoardEditProfileTab: {
+		'General': 'Genel',
+		'Profile': 'Profil',
+		'Socials': 'Sosyal medya',
+		'Documents': 'Dokümanlar',
+	},
 	pageSearch: {
 		'Type and press enter': 'Yaz ve entera bas',
 		'Recommended': 'Önerilenler',
