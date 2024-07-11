@@ -44,9 +44,9 @@ export default function SignUp() {
     `),
     {
       onCompleted: (data) => {
-        toast.success("User created successfully!");
+        toast.success("Hesabınız Başarıyla Oluşturulmuştur!");
         if (isAuthenticated) {
-          logout("/login");
+          logout("/giris");
         } else {
           login(email, password, "/dashboard/edit-profile/general");
         }
@@ -62,7 +62,7 @@ export default function SignUp() {
   const handleRegister = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!email || !password) {
-      toast.error(T["Email and password are required!"], {
+      toast.error(T["E-posta ve Şifre Zorunludur!"], {
         position: "bottom-center",
       });
       return;
@@ -80,8 +80,8 @@ export default function SignUp() {
     <LoginLayout
       isSignUpPage
       rightBtn={{
-        text: T["Sign in"],
-        href: "/login",
+        text: T["Giriş Yap"],
+        href: "/giris",
       }}
     >
       <>
@@ -92,7 +92,7 @@ export default function SignUp() {
                 <Label htmlFor="email">{T.Email}</Label>
                 <Input
                   id="email"
-                  placeholder={T["Enter your email"]}
+                  placeholder={T["E-Posta Adresiniz"]}
                   autoCapitalize="none"
                   autoComplete="email"
                   autoCorrect="off"
@@ -128,26 +128,26 @@ export default function SignUp() {
         <div>
           {NC_SITE_SETTINGS.privacy_policy_page ? (
             <p className="mb-3 text-xs text-center text-neutral-500">
-              {T["By creating an account you agree with our"]}{" "}
+              {T["Bir hesap oluşturarak aşağıdakileri kabul etmiş olursunuz"]}{" "}
               <a
                 className="underline"
                 href={NC_SITE_SETTINGS.privacy_policy_page?.uri}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {T["Privacy Policy"]}!
+                {T["Gizlilik Sözleşmesi"]}!
               </a>
               .
             </p>
           ) : null}
 
           <p className="text-center text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-            {T["Already have an account?"]}{" "}
+            {T["Zaten bir hesabınız varmı ?"]}{" "}
             <Link
-              href="/login"
+              href="/giris"
               className="text-primary-600 hover:text-primary-500 dark:text-primary-500 hover:underline underline-offset-2"
             >
-              {T["Sign in"]}!
+              {T["Giriş Yap"]}!
             </Link>
           </p>
         </div>
