@@ -18,7 +18,7 @@ export default {
 	Saveds: 'Kaydedilenler',
 	Comments: 'Yorumlar',
 	'Load more': 'Daha Fazla Yükle',
-	Published: 'Yayınlanan',
+	'Published': 'Yayınlanan',
 	Pending: 'Bekleyen',
 	Scheduled: 'Zamanlanan',
 	Draft: 'Taslak',
