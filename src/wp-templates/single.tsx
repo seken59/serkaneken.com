@@ -46,7 +46,7 @@ const DynamicSingleType5 = dynamic(
 const Component: FaustTemplate<GetPostSiglePageQuery> = (props) => {
   //  LOADING ----------
   if (props.loading) {
-    return <>Loading...</>;
+    return <>Yükleniyor...</>;
   }
 
   const router = useRouter();
