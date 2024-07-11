@@ -154,10 +154,10 @@ export default {
 		'Load more tags': 'Daha fazla etiket yükle',
 		'Write your post content here…': 'Konu içeriğini buraya yazın...',
 		'The url is not an image, please try again.':
-			'URL bir resim değil lütfen tekrar deneyin.',
+			'URL bir resim değil, lütfen tekrar deneyin.',
 		'Upload a file': 'Dosya yükle',
 		Re: 'Dosya yükle',
-		'Paste or type URL': 'URL'yi yapıştır veya yaz',
+		'Paste or type URL': 'URL’yi yapıştır veya yaz',
 		'Sorry this feature is not available yet. Please use the URL option.':
 			'Bu özellik henüz kullanılamıyor. Lütfen URL seçeneğini kullanın.',
 		'Post options': 'Konu seçenekleri',
