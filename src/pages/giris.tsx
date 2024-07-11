@@ -82,7 +82,7 @@ export default function Login() {
                 />
               </div>
               <div className="grid">
-                <ButtonPrimary loading={loading}>Sign in</ButtonPrimary>
+                <ButtonPrimary loading={loading}>Giriş Yap</ButtonPrimary>
                 {!!errorMessage && (
                   <Error className="text-center mt-2" error={errorMessage} />
                 )}
@@ -94,7 +94,7 @@ export default function Login() {
         <p className="text-center text-sm leading-6 text-neutral-500 dark:text-neutral-400">
           {T["Not a member?"]}{" "}
           <Link
-            href="/sign-up"
+            href="/kayit"
             className="text-primary-600 hover:text-primary-500 dark:text-primary-400 hover:underline underline-offset-2"
           >
             {T["Sign up"]}
