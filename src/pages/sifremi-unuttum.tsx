@@ -41,7 +41,7 @@ export default function ResetPassWord() {
   const handleRegister = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!username) {
-      toast.error(T["E-posta veya Kullanıcı adı girmek zorundasınız!"], {
+      toast.error(T["Email or username are required!"], {
         position: "bottom-center",
       });
       return;
@@ -57,7 +57,7 @@ export default function ResetPassWord() {
     <LoginLayout
       isResetPasswordPage
       rightBtn={{
-        text: T["Giriş Yap"],
+        text: T["Sign in"],
         href: "/giris",
       }}
     >
@@ -66,10 +66,10 @@ export default function ResetPassWord() {
           <form onSubmit={handleRegister}>
             <div className="grid gap-4">
               <div className="grid gap-1.5">
-                <Label htmlFor="username">{T["E-Posta veya Kullanıcı Adı"]}</Label>
+                <Label htmlFor="username">{T["Email or username"]}</Label>
                 <Input
                   id="username"
-                  placeholder={T["E-Posta veya Kullanıcı Adı"]}
+                  placeholder={T["Email or username"]}
                   autoCapitalize="none"
                   autoCorrect="off"
                   type="text"
@@ -80,7 +80,7 @@ export default function ResetPassWord() {
 
               <div className="grid">
                 <ButtonPrimary loading={loading}>
-                  {T["Şifreyi Sıfırla"]}
+                  {T["Reset password"]}
                 </ButtonPrimary>
 
                 {!!error?.message && (
@@ -92,19 +92,19 @@ export default function ResetPassWord() {
         </div>
 
         <p className="text-center text-sm leading-6 text-neutral-500 dark:text-neutral-400">
-          {T["Üye Değilmisin ?"]}{" "}
+          {T["Not a member?"]}{" "}
           <Link
             href="/kayit"
             className="text-primary-600 hover:text-primary-500 dark:text-primary-400 hover:underline underline-offset-2"
           >
-            {T["Kayıt Ol"]}
+            {T["Sign up"]}
           </Link>
           <span className="mx-1">|</span>
           <Link
             href="/giris"
             className="text-primary-600 hover:text-primary-500 dark:text-primary-400 hover:underline underline-offset-2"
           >
-            {T["Giriş"]}
+            {T["Login"]}
           </Link>
         </p>
       </>
