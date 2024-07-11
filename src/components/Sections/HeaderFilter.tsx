@@ -13,8 +13,8 @@ export interface HeaderFilterProps {
 }
 
 const HeaderFilter: FC<HeaderFilterProps> = ({
-	tabs = ['All items', 'Garden', 'Fitness', 'Design'],
-	heading = '🎈 Latest Articles',
+	tabs = ['Tümü', 'Garden', 'Fitness', 'Design'],
+	heading = '🎈 Son Konular',
 }) => {
 	const [tabActive, setTabActive] = useState<string>(tabs[0])
 
@@ -44,7 +44,7 @@ const HeaderFilter: FC<HeaderFilterProps> = ({
 					))}
 				</Nav>
 				<Button className="!hidden md:!flex" pattern="white" sizeClass="px-6">
-					<span>View all</span>
+					<span>Tümünü Gör</span>
 					<ArrowRightIcon className="ms-3 h-6 w-6 rtl:rotate-180" />
 				</Button>
 			</div>
