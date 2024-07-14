@@ -3,7 +3,7 @@
 	"mailpoet_api_key": "aecfb2660c6036328b6e204328f4b99d",
 	"mailpoet_list_id": "3",
 	"subcription_widget": {
-		"enable": true,
+		"enable": false,
 		"title": "Haberdar Olun",
 		"description": "Yeni bir şey yayınladığımda haberdar olun ve istediğiniz zaman aboneliğinizi iptal edin.",
 		"placeholder": "E-Posta Adresiniz",
