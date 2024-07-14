@@ -66,8 +66,8 @@ export default class Document extends NextDocument {
 						color="#38bdf8"
 					/>
 					<link rel="shortcut icon" href={v('/favicons/favicon.ico')} />
-					<meta name="apple-mobile-web-app-title" content="Ncmaz Nextjs" />
-					<meta name="application-name" content="Ncmaz Nextjs" />
+					<meta name="apple-mobile-web-app-title" content="Serkan EKEN" />
+					<meta name="application-name" content="Serkan EKEN" />
 					<meta name="theme-color" content="#172A53" />
 					<script
 						dangerouslySetInnerHTML={{
