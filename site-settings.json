@@ -168,7 +168,7 @@
 			{
 				"name": "Post_Style",
 				"label": "Post Style",
-				"enable": false
+				"enable": true
 			},
 			{
 				"name": "Show_Right_Sidebar",
