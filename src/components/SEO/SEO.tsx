@@ -30,7 +30,8 @@ export default function SEO({ title, description, imageUrl, url }: Props) {
       <Head>
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
-
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3587527382109371"
+     crossorigin="anonymous"></script>
         {title && (
           <>
             <title>{title}</title>
@@ -64,8 +65,6 @@ export default function SEO({ title, description, imageUrl, url }: Props) {
             <meta property="twitter:url" content={url} />
           </>
         )}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3587527382109371"
-     crossorigin="anonymous"></script>
       </Head>
     </>
   );
