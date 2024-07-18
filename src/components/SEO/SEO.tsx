@@ -30,6 +30,7 @@ export default function SEO({ title, description, imageUrl, url }: Props) {
       <Head>
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
+        <meta name="google-adsense-account" content="ca-pub-3587527382109371" />
         
         {title && (
           <>
