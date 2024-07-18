@@ -30,8 +30,13 @@ export default function SEO({ title, description, imageUrl, url }: Props) {
       <Head>
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3587527382109371"
-     crossorigin="anonymous"></script>
+        {/* Add Google AdSense script here */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3587527382109371"
+          crossorigin="anonymous"
+        />
+        
         {title && (
           <>
             <title>{title}</title>
